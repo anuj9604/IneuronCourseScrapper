@@ -1,0 +1,35 @@
+OBJECTIVE:
+
+1. Go to iNeuron.ai
+
+2. List down all the courses
+
+3. 1 by 1 scrap all one neuron course page
+
+4. Collect all the data segmentwise
+
+5. Collect the in MySQL/MongoDB
+
+6. Deploy it on Hiroku, AWS, GCP
+
+7. Create a UI, showcasing it in HTML
+
+8. Share a deployed link
+
+
+RESTRICTIONS:
+
+1. Don't take help from mentors
+
+2. Always use coding standard
+
+
+Additional task:
+
+1. Save images scrapped in mongodb
+
+2. Implement using class ojects and coding standards
+
+3. Write a function for fetch all the image based on their name form data base
+
+4. Try to modify a code that will first search the database and check if images are available for a respective search. If images in database less than search number requested, then only search. And search the difference.

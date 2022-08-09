@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+{% block head %}
+<title>Ineuron Courses</title>
+<link rel="stylesheet" href="E:\Python Scripts\iNeuron.ai\Live assignments\Web Scrapper 1\static\style.css">
+{% endblock %}
+
+{% block body %}
+<div class="main-container" style="width: 100vw; height: 100vh; background-color: #ddd;">
+    <form class="btn-primary" action="/scrap" method="POST">
+        <input type="submit" value="Scrap the data and insert into database"
+            style="width: 50%; height: 10%; background-color: #98d0c4; color: #fff; font-weight: bolder; font-size: 28px; position: fixed; left: 25%; top:35%;">
+    </form>
+    <form class="btn-primary" action="/courses" method="POST">
+        <input type="submit" value="Display Courses details"
+            style="width: 50%; height: 10%; background-color: #000; color: #fff; font-weight: bolder; font-size: 28px; position: fixed; left: 25%; top:50%;">
+    </form>
+</div>
+{% endblock %}
+
+</html>

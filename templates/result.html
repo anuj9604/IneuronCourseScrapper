@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+{% block head %}
+<title>Ineuron Courses</title>
+<style>
+    .main-container {
+        width: 100%;
+        height: 100%;
+        background-color: #C1C7CC;
+    }
+
+    th,
+    td {
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="main-container">
+    <table border="1px solid black" style="padding: 15px">
+        <tr>
+            <th>Course Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Instructor(s)</th>
+        </tr>
+        {% for course in content %}
+        <tr>
+            <td>{{course[0]}}</td>
+            <td>{{course[1]}}</td>
+            <td>{{course[2]}}</td>
+            <td>{{course[3]}}</td>
+            <td>
+                <table>
+                    {% for instructor in course[4] %}
+                    <tr>
+                        <td style="padding: 15px">{{instructor}}.</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+
+</html>
